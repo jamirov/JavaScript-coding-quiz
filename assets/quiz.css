@@ -1,0 +1,55 @@
+li{    
+background-color: purple;
+margin-top: 10px;
+padding: 5px 15px;
+width: 80%;
+font-size: 18px;
+color: white;
+    
+}
+#submit{
+    background-color: purple;
+    padding: 5px 10px;
+    font-size: 10;
+    color: white;
+}
+
+#startBtn,
+#goBack,
+#clearHighScores{
+    background-color: purple;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+body{
+    background-color:rgb(236 229 239) !important;
+}
+
+#initial{
+    font-size: 25px;
+}
+
+#question1{
+    display: none;
+}
+#question2{
+    display: none;
+}
+#question3{
+    display: none;
+
+}
+#question4{
+    display: none;
+}
+#allDone{
+    display: none;
+}
+#highScoresBoard{
+    display: none;
+}
+#resultAlertWrong,
+#resultAlert{
+    display: none;
+}

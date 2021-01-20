@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/quiz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+ 
+</head>
+<body>
+<header>
+    <div class="row ">
+        <div class="col">
+            <h4 id="viewHighScores" class="ml-5 mt-5 "  href=""><a>View Highscores</a></h4>
+        </div>
+        <div class="col">
+            <h4 class="mt-5 mr-5 float-right " id="time">Time:<span id="countdown">0</span></h4>
+        </div>
+    </div>
+</header>
+    
+<div class="container mt-40px bg-light ">
+    <div id="infoBox" class="row mx-auto">
+            <h2 id="question" class="quesion mx-auto" >Coding Quiz Challenge</h2>
+            <p>Try to answer following code related question within the time limit.
+                Keep in mind that incorrect answers will penalize your score time by ten seconds.
+            </p>
+            <button type="button" id="startBtn" class="btn text-center btn-danger btn-sm mx-auto ">Start Quiz</button>
+    </div>
+    <div id="question1">
+        <h2>Commonly used data types DO NOT include:</h2>
+        <ol>
+            <li> Strings.</li>
+            <li> Booleans.</li>
+            <li id="answer1" > Alerts.</li>
+            <li> Numbers.</li>
+        </ol>
+    </div>
+    <div id="question2">
+        <h2>Arrays in JavaScript can be used store ______.</h2>
+        <ol>
+            <li> Numbers and strings.</li>
+            <li> Other Arrays.</li>
+            <li> Booleans.</li>
+            <li id="answer2" > All of above.</li>
+        </ol>
+    </div>
+    <div id="question3">
+        <h2>String Values must be enclosed within______when being assigned to variables.</h2>
+        <ol>
+            <li> Commas.</li>
+            <li> Curly brackets.</li>
+            <li id="answer3" > Quotes.</li>
+            <li> Parentheses.</li>
+        </ol>
+    </div>
+    <div id="question4">
+        <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+        <ol>
+            <li> JavaScript</li>
+            <li> Terminal/Bash.</li>
+            <li> for loops.</li>
+            <li id="answer4"> Console.log.</li>
+        </ol>
+    </div>
+    <div id="allDone" >
+    <h2>All Done!!</h2>
+        <h4>Your final score is: <span id="score">0</span></h4>
+            <div class="input-group mb-3">
+                <span id="initial">Enter initials:</span>
+                    <input type="text" class="form-control" aria-label="Users Initials" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+            <button id="submit" class="btn btn-outline-secondary" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div id="highScoresBoard" >
+            <h2>Highscores</h2>
+            <h4>Your final score is: <span id="score"> 0</span></h4>
+            <button id="goBack" type="button" class="btn btn-primary">Go back</button>    
+            <button id="clearHighScores" type="button" class="btn btn-primary">Clear Highscores</button>
+    </div>
+<hr>
+<!-- <div class="bg-light ml-5 text-center ">
+    <h3></h3>Correct!!
+</div> -->
+<div id="resultAlert" class="alert alert-secondary" role="alert">
+    Correct!
+</div>
+<div id="resultAlertWrong" class="alert alert-secondary" role="alert">
+    Wrong!
+</div>
+
+
+</div>
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
