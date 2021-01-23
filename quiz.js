@@ -1,4 +1,5 @@
 
+
 var button = document.querySelector(".btn");
 var pEl = document.querySelector("p");
 var h1 = document.getElementById("question");
@@ -128,10 +129,23 @@ pEl.setAttribute("style", "display:none");
 h1.setAttribute("style", "display:none");
 resultAlert.setAttribute("style","display:none");
 highScoresBoard.setAttribute("style","display:inline-block");
-var initial2 = (JSON.parse(localStorage.getItem('newScore')));
-console.log(initial2);
+var stringObj = JSON.parse(localStorage.getItem('newScore'));
+var int = stringObj.init;
+var scor = stringObj.score;
+var newLi = document.createElement("li");
+newLi.innerHTML = int + " " + scor;
+var hiScorBoard = document.getElementById("hiScorBoard");
+hiScorBoard.appendChild(newLi);
 });     
 
 document.getElementById("goBack").addEventListener("click", function() {
+
 location.reload();
 });
+
+document.getElementById("clearHighScores").addEventListener("click", function(){
+var hiScorBoard = document.getElementById("hiScorBoard");
+hiScorBoard.innerHTML = "";
+localStorage.clear();
+
+})
